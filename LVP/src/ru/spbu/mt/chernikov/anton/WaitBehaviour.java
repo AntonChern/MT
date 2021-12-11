@@ -36,10 +36,6 @@ public class WaitBehaviour extends TickerBehaviour {
         double new_value = value + Const.alpha * res;
         myAgent.setValue(new_value);
 
-//        if (Math.abs(new_value - value) < Const.epsilon) {
-//            this.stop();
-//            System.out.println(myAgent.getLocalName() + ": " + new_value);
-//        }
         iteration++;
         if (iteration == Const.iterations) {
             this.stop();
